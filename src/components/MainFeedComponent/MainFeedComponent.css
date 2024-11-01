@@ -1,0 +1,231 @@
+  /* Make the post-container look like a button */
+.post-button {
+    background-color: #11448B;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 5px 15px;
+    font-weight: 500;
+    width: 100px;
+    color: white;
+    border:none;
+}
+
+.post-button:hover {       
+    background-color: #6aa1d7;
+}
+
+.post-content{
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border:none;
+    box-shadow: none;
+    border-bottom: 1px solid #ddd;
+    width: 800px;
+}
+
+.form-control.title-post{
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
+
+.create-post-container {
+    width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border:none;
+  }
+  
+  .create-post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .create-post-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .drafts-button {
+    background: none;
+    border: none;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .community-select button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .post-type-tabs {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    /* border: 1px solid #ddd; */
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .active {
+    border-bottom: 2px solid blue;
+    background-color: white;
+  }
+  
+  .post-form .input-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .char-counter {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 0.8rem;
+    color: gray;
+  }
+  
+  .editor-toolbar {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .editor-toolbar button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+.save-draft {
+  background-color: #ddd;
+}
+  
+/* .post-button {
+  background-color: #00aaff;
+  cursor: pointer;
+} */
+
+.upload-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #666;
+    font-family: Arial, sans-serif;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-bottom: 30px;
+}
+
+.upload-container.dragging {
+    background-color: #f0f8ff;
+    border-color: #007bff;
+}
+
+.add-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-icon {
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+
+.image-preview-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-preview {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Hide the remove button by default */
+.remove-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #5a5a5a;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* transition: background-color 0.3s; */
+}
+
+/* Show the remove button only on hover of the image container */
+.image-preview-container:hover .remove-button {
+    display: flex;
+}
+
+.remove-button i {
+    font-size: 1.2em;
+    color: white;
+}
+
+.remove-button:hover {
+    background-color: black;
+}

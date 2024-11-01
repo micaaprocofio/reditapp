@@ -1,0 +1,155 @@
+.navbar {
+    border-bottom: 1px solid #dcdcdc; /* Navbar border at the bottom */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que el navbar se mantenga sobre otros elementos */
+    background-color: white; /* Define un color de fondo para evitar transparencia */
+}
+  
+.create-btn {
+    background-color: #11448B;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 15px;
+    font-weight: 500;
+    /* border: 1px solid #d1d5da; */
+    border:none;
+    margin-right: 15px;
+}
+/* le doy color al create cuando pasa el cursor por arriba */
+.create-btn:hover {       
+    background-color: #6aa1d7;
+}
+  
+.search-bar {
+    border-radius: 50px;
+    background-color: #edf0f5;
+    padding: 2px;
+    width: 100%;
+    max-width: 600px;  
+    display: flex;
+    align-items: center; /* Centra verticalmente el icono y el input */
+}
+
+.search-bar input {
+    border: none;
+    background-color: #edf0f5; /* Asegura que el fondo sea transparente */
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+}
+
+.search-bar i {
+    /* margin-right: 10px; */
+    color: #878a8c;
+    display: flex;
+    align-items: center; /* Asegura que el icono esté centrado */
+}
+
+.search-btn {
+    border: none;
+    width: 40px;
+    height: 40px; /* Ajusta el tamaño del botón */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    background-color: transparent; /* Elimina cualquier fondo no deseado */
+}
+
+.search-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control.search-bar-input{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    background-color: #edf0f5;
+}
+
+.search-bar-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none; /* Evita el borde azul en algunos navegadores */
+}
+
+.dropdown-toggle:focus {
+    outline: none;
+    box-shadow: none; /* Para asegurarse de que no haya ningún borde o sombra */
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -180px; /* Ajuste hacia la izquierda */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 200px;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-toggle:focus + .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+hr {
+    margin: 5px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.icon-large {
+    font-size: 1.5rem; /* Ajusta el tamaño del icono según lo que necesites */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.text-large {
+    font-size: 1rem; /* Ajusta el tamaño del texto según lo que necesites */
+}
+
+/* Para ajustar el estilo del botón */
+.logout-button {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item:focus {
+    outline: none;
+    box-shadow: none; /* Para asegurarse de que no haya ningún borde o sombra */
+}

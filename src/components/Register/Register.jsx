@@ -1,7 +1,7 @@
 // import './InformacionPersonal.css';
 // import '/Users/mica/Desarrollo Web & Mobile/cvapp/src/components/index.css';
 // import '@fortawesome/fontawesome-free/css/all.min.css';
-import '/Users/mica/Desarrollo Web & Mobile/redditapp/src/components/index.css';
+import '../index.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -58,16 +58,6 @@ function Register() {
                 <div className="d-flex justify-content-center col-sm-12">
                 <input type="password"  placeholder='Password' style={{ backgroundColor: '#fff' }} className="form-control" value={password} onChange={(e) => setPassword(e.target.value)}/>
                 </div>
-            </div>
-            <div className="row mb-3">
-                <div className="d-flex justify-content-center col-sm-12">
-                    <div className="d-flex col-6 text-secondary">
-                        <input type="checkbox"  style={{ transform: 'scale(0.7)', backgroundColor: '#fff' }} className="form-control custom-checkbox" name='flexCheck' id='flexCheckDefault'/>
-                        <label for="flexCheck" className="custom-label"> I have read and agree to the terms</label>
-                    </div>
-                    
-                </div>
-                
             </div>
             <div className="row mb-3">
                 <div className="d-flex justify-content-center col-sm-12">
